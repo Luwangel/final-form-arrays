@@ -78,7 +78,7 @@
 
         if (fieldIndex >= index) {
           // Shift all higher indices up
-          var incrementedKey = name + "[" + (fieldIndex + 1) + "]" + tokens[2];
+          var incrementedKey = name + "[" + fieldIndex + "]" + tokens[2];
           copyField(state.fields, key, newFields, incrementedKey);
           return;
         }
