@@ -23,7 +23,7 @@ const insert: Mutator<any> = (
       const fieldIndex = Number(tokens[1])
       if (fieldIndex >= index) {
         // Shift all higher indices up
-        const incrementedKey = `${name}[${fieldIndex + 1}]${tokens[2]}`
+        const incrementedKey = `${name}[${fieldIndex}]${tokens[2]}`
         copyField(state.fields, key, newFields, incrementedKey)
         return
       }
